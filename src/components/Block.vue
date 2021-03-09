@@ -1,6 +1,6 @@
 <template>
   <div class="block" v-if="showBlock" @click="stopTimer">
-    click me
+    Click Now!
   </div>
 </template>
 
@@ -47,6 +47,7 @@ export default{
     border-radius: 20px;
     background: #0faf87;
     color: white;
+    font-size: 40px;
     text-align: center;
     padding: 100px 0;
     margin: 40px auto;

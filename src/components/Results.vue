@@ -1,6 +1,6 @@
 <template>
   <p>Reaction Time: {{ scoreResult }} ms</p>
-  <p>{{ rank }}</p>
+  <p class="rank">{{ rank }}</p>
 </template>
 
 <script>
@@ -15,16 +15,20 @@ export default{
 
   mounted() {
     if (this.scoreResult < 250){
-      this.rank = 'Awsome Reaction'
+      this.rank = 'Awesome Reaction!'
     } else if (this.scoreResult < 400){
-      this.rank = 'You Are Good'
+      this.rank = 'Hmm.. You Are Good!'
     } else {
-      this.rank = 'At least You Tried'
+      this.rank = 'OK.. At Least You Tried'
     }
   }
 }
 </script>
 
 <style>
-
+  .rank {
+  font-size: 1.4em;
+  color: purple;
+  font-weight: bold;
+  }
 </style>
